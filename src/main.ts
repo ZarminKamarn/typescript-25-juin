@@ -116,13 +116,21 @@ function displayItemDetails(item: Book | Movie | Album){
     if (isBook(item)){
         console.log(`Livre : ${item.title} par ${item.author} (${item.year})`);
     }
-    if (isMovie(item)){
+    else if (isMovie(item)){
         console.log(`Film : ${item.title} réalisé par ${item.director} (${item.year})`);
     }
-    if (isAlbum(item)){
+    else if (isAlbum(item)){
         console.log(`Album : ${item.title} par ${item.artist} (${item.year})`);
     }
 }
+
+/* Autre Solution dans la fonction
+
+if ('author' in item){
+    console.log(`Livre : ${item.title} par ${item.author} (${item.year})`);
+}
+    
+*/
 
 function isBook(item: Book): item is Book{
     return item.author !== undefined;
