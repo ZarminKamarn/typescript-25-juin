@@ -1,0 +1,18 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding: 48px;
+    background-color: #e0e0e0;
+}
+
+.title{
+    align-self: center;
+    color: rgb(145, 0, 0);
+    font-size: 48px;
+}
+
+.text{
+    color: rgb(27, 27, 110);
+    font-size: 24px;
+}
